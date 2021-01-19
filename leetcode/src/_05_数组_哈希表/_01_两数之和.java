@@ -13,6 +13,7 @@ import java.util.Map;
 public class _01_两数之和 {
     public static void main(String[] args) {
         /*
+            {2, 7, 11, 15}
             暴力枚举过程: target = 26的情况
 
                         索引 : 0  1  2  3
@@ -61,7 +62,7 @@ public class _01_两数之和 {
             hashtable.put(nums[i], i);
         }
 
-        // 这种做法效率偏低
+        // 这种做法效率偏低, 两次哈希
         // 首先将数组中所有元素都添加到哈希表中, 哈希表的桶存储的是一个Map<Integer, Integer>, key为元素值 value为元素下标
         /*for (int i = 0; i < len; i++) {
             hashtable.put(nums[i], i);

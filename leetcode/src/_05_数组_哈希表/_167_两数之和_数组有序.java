@@ -12,15 +12,34 @@ import java.util.Map;
 @SuppressWarnings("all")
 public class _167_两数之和_数组有序 {
     public static void main(String[] args) {
-
+        int[] nums = twoSum3(new int[]{2, 7, 11, 15}, 9);
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
     }
 
     /*
-        使用双指针
+        使用双指针 :
+            因为是输入的是升序数组, 所以可以使用双指针解法
+            两个指针, low指向最小元素, high指向最大元素
+                当nums[low] + nums[high] == target, 此时就找到了[low, high]
+                如果 nums[low] + nums[high] < target, 此时low++, 增大值
+                如果 nums[low] + nums[high] > target, 此时high--, 减小值
      */
-    public int[] twoSum3(int[] numbers, int target) {
-
-        return null;
+    public static int[] twoSum3(int[] numbers, int target) {
+        int low = 0;
+        int high = numbers.length - 1;
+        while (low < high) {
+            int sum = numbers[low] + numbers[high];
+            if (sum == target) {
+                return new int[]{low + 1, high + 1};
+            } else if (sum < target) {
+                ++low;
+            } else {
+                --high;
+            }
+        }
+        return new int[]{-1, -1};
     }
 
     /*
