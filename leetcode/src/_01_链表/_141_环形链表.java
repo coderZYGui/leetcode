@@ -1,11 +1,12 @@
 package _01_链表;
 
 /**
- * Description: 判断链表是否有环
+ * Description: 判断链表是否有环 https://leetcode-cn.com/problems/linked-list-cycle/
  *
  * @author zygui
  * @date 2020/3/28 16:12
  */
+@SuppressWarnings("all")
 public class _141_环形链表 {
 
     // 使用快慢指针来解决

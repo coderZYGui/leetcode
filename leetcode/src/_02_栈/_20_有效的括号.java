@@ -10,6 +10,7 @@ import java.util.Stack;
  * @author zygui
  * @date 2020/4/9 21:31
  */
+@SuppressWarnings("all")
 public class _20_有效的括号 {
     // {[()]}
 

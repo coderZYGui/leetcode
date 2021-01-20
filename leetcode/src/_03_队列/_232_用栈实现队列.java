@@ -8,6 +8,7 @@ import java.util.Stack;
  * @author zygui
  * @date 2020/4/11 21:27
  */
+@SuppressWarnings("all")
 public class _232_用栈实现队列 {
 
     private Stack<Integer> inStack = new Stack<>();

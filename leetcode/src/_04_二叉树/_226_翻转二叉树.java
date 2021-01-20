@@ -6,6 +6,7 @@ package _04_二叉树;
  * @author guizy
  * @date 2020/11/16 23:22
  */
+@SuppressWarnings("all")
 public class _226_翻转二叉树 {
 
     public TreeNode invertTree(TreeNode root) {

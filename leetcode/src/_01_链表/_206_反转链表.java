@@ -7,6 +7,7 @@ package _01_链表;
  * @author zygui
  * @date 2020/3/28 15:24
  */
+@SuppressWarnings("all")
 public class _206_反转链表 {
 
     // 递归实现

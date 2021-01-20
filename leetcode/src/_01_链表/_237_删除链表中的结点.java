@@ -6,6 +6,7 @@ package _01_链表;
  * @author zygui
  * @date 2020/3/28 14:14
  */
+@SuppressWarnings("all")
 public class _237_删除链表中的结点 {
 
     /**
